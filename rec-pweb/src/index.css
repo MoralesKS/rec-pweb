@@ -1,0 +1,103 @@
+:root { --escuro: #2d2d2d; --cinza: #f3f3f3; --texto: #333; --claro: #9a9a9a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; color: var(--texto); background: #fff; line-height: 1.6; }
+img { display: block; max-width: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.secao { padding: 60px 0; }
+.alinha-direita { display: flex; justify-content: flex-end; margin-top: 20px; }
+
+/* Header */
+.header { background: #fff; position: sticky; top: 0; z-index: 10; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.logo { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.logo-marca { font-size: 26px; font-weight: 300; letter-spacing: 2px; }
+.logo-texto { font-size: 7px; letter-spacing: 3px; margin-top: 4px; }
+.logo-claro { color: #fff; }
+.nav { display: flex; gap: 32px; }
+.nav a { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.nav a.active { border-bottom-color: var(--texto); }
+.menu-btn { display: none; background: none; border: 0; font-size: 24px; cursor: pointer; }
+
+/* Títulos e botões */
+.titulo { font-size: 44px; font-weight: 300; margin-bottom: 36px; color: var(--claro); }
+.titulo strong { color: var(--texto); font-weight: 700; display: block; }
+.h2-leve { font-size: 28px; font-weight: 300; color: var(--claro); margin-bottom: 24px; }
+.btn { display: inline-block; background: var(--escuro); color: #fff; border: 0; padding: 12px 28px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; font-family: inherit; }
+.btn:hover { background: #000; }
+
+/* Home */
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding: 40px 0 70px; }
+.hero h1 { font-size: 54px; font-weight: 300; color: var(--claro); line-height: 1.1; margin-bottom: 30px; }
+.hero h1 strong { color: var(--texto); font-weight: 700; }
+.hero img { width: 100%; height: 480px; }
+.sobre-faixa { background: var(--cinza); padding: 40px 0; }
+.sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.sobre-grid h2 { font-weight: 300; font-size: 28px; color: var(--claro); margin-bottom: 12px; }
+.sobre-grid p { margin-bottom: 20px; font-size: 14px; }
+.sobre-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sobre-imgs img { width: 100%; height: 240px; }
+.missao { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.missao div { display: flex; gap: 20px; align-items: flex-start; font-size: 14px; }
+.numero { font-size: 80px; font-weight: 300; color: #ddd; line-height: 1; }
+.mosaico { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.mosaico-item { position: relative; overflow: hidden; height: 160px; }
+.mosaico-item img { width: 100%; height: 100%; }
+.item-0 { grid-column: span 2; background: var(--escuro); }
+.item-1 { grid-column: span 4; }
+.item-2, .item-3, .item-4 { grid-column: span 2; }
+.mosaico-legenda { position: absolute; inset: 0; background: rgba(45,45,45,.8); color: #fff; font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px; }
+.contato-home { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.contato-home img { width: 100%; height: 360px; }
+.form { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.form input, .form textarea { width: 100%; padding: 10px; border: 0; background: var(--cinza); font-family: inherit; }
+.form .btn { margin-top: 10px; }
+
+/* Galeria */
+.galeria { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.galeria img { width: 100%; aspect-ratio: 1; }
+
+/* Projetos */
+.lista-projetos { display: flex; flex-direction: column; gap: 40px; }
+.projeto-card { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.projeto-card img { width: 100%; height: 260px; }
+.projeto-card h3 { font-weight: 300; font-size: 24px; color: var(--claro); margin-bottom: 10px; }
+.projeto-card p { font-size: 14px; margin-bottom: 20px; }
+
+/* Detalhe */
+.detalhe-capa { width: 100%; height: 380px; margin-bottom: 20px; }
+.detalhe-info { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+.detalhe-info p { margin-bottom: 12px; font-size: 14px; }
+.detalhe-nav { display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+
+/* Sobre / Contato */
+.sobre-pagina { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.sobre-pagina p { margin-bottom: 16px; font-size: 14px; }
+.contato-pagina { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; align-items: center; }
+.contato-pagina p { margin-bottom: 18px; font-size: 14px; }
+.contato-pagina iframe { width: 100%; height: 380px; border: 1px solid #ccc; }
+
+/* Footer */
+.footer { background: var(--escuro); color: #fff; padding: 50px 0 20px; margin-top: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr 1.4fr 1fr; gap: 30px; }
+.footer h4 { font-size: 12px; margin-bottom: 14px; }
+.footer a, .footer p { display: block; font-size: 11px; margin-bottom: 10px; color: #ddd; }
+.redes { display: flex; gap: 14px; font-size: 12px; }
+.copy { text-align: center; font-size: 10px; color: #888; margin-top: 40px; border-top: 1px solid #444; padding-top: 18px; }
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .menu-btn { display: block; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; gap: 0; padding: 10px 4%; box-shadow: 0 6px 10px rgba(0,0,0,.08); }
+  .nav.aberto { display: flex; }
+  .nav a { padding: 12px 0; }
+  .hero, .sobre-grid, .missao, .contato-home, .projeto-card, .detalhe-info, .sobre-pagina, .contato-pagina { grid-template-columns: 1fr; }
+  .hero img { height: 300px; }
+  .hero h1 { font-size: 40px; }
+  .titulo { font-size: 34px; }
+  .mosaico { grid-template-columns: 1fr 1fr; }
+  .item-0, .item-1, .item-2, .item-3, .item-4 { grid-column: span 1; }
+  .item-1 { grid-column: span 2; }
+  .galeria { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
