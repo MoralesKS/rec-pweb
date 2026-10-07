@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <section className="container hero">
         <div className="hero-texto">
-          <h1><span>PROJETO</span><br /><strong>Lorum</strong></h1>
+          <h1><span>Nossos</span><br /><strong>Projetos</strong></h1>
           <Botao to="/projetos">Ver projetos</Botao>
         </div>
         <img src={imgHero} alt="Edifício moderno" />
@@ -20,7 +20,9 @@ export default function Home() {
           </div>
           <div>
             <h2>Sobre</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p style={{textAlign: 'justify'}}>Somos um escritório de arquitetura que transforma ideias em projetos construíveis. 
+              Combinamos desenho autoral, modelagem 3D e tecnologia BIM para entregar projetos precisos, no prazo e dentro do orçamento. 
+              Cada obra começa ouvindo o cliente e termina com um espaço pensado para durar.</p>
             <Botao to="/sobre">Saiba mais</Botao>
           </div>
         </div>
@@ -29,8 +31,8 @@ export default function Home() {
       <section className="container secao">
         <h2 className="h2-leve">Foco principal / Missão</h2>
         <div className="missao">
-          <div><span className="numero">1</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-          <div><span className="numero">2</span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+          <div><span className="numero">1</span><p>Projetos que unem estética e função: cada decisão de desenho precisa ter um propósito, da circulação das pessoas à entrada de luz.</p></div>
+          <div><span className="numero">2</span><p>Tecnologia a serviço da obra: modelagem 3D e BIM reduzem erros, retrabalho e custos antes mesmo da primeira escavação.</p></div>
         </div>
       </section>
 

@@ -10,10 +10,16 @@ export default function Sobre() {
           <img src={imgSobre[0]} alt="" /><img src={imgSobre[1]} alt="" />
         </div>
         <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <p>Somos um escritório de arquitetura que transforma ideias em projetos construíveis. Combinamos desenho autoral, modelagem 3D e tecnologia BIM para entregar projetos precisos, no prazo e dentro do orçamento. </p>
+          <p>Cada obra começa ouvindo o cliente e termina com um espaço pensado para durar.</p>
+
           <h2 className="h2-leve">Certificações</h2>
-          <p>Em breve.</p>
+          <ul style={{marginLeft: 16}}>
+            <li>Registro do escritório no conselho profissional (CAU/CREA)</li>
+            <li>Certificação em BIM</li>
+            <li>ISO 9001, gestão da qualidade</li>
+            <li>Certificação de construção sustentável (LEED ou AQUA)</li>
+          </ul>
         </div>
       </div>
     </section>
